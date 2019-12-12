@@ -18,3 +18,17 @@ export const getJoke = () => dispatch => {
             dispatch({ type: FETCH_JOKE_FAILURE, payload: err.response });
         })
 }
+
+// export const getPokemon = () => dispatch => {
+//     dispatch({ type: FETCH_JOKE_START });
+//     axios
+//         .get('https://pokeapi.co/api/v2/pokemon/')
+//         .then(res => {
+//             console.log(res.data);
+//             dispatch({ type: FETCH_JOKE_SUCCESS, payload: res.data });
+//         })
+//         .catch(err => {
+//             console.log(err);
+//             dispatch({ type: FETCH_JOKE_FAILURE, payload: err.response });
+//         })
+// }

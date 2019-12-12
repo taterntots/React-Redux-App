@@ -5,8 +5,8 @@ import {
 } from '../actions';
 
 const initialState = {
-    setup: 'setup',
-    punchline: 'punchline',
+    setup: null,
+    punchline: null,
     isFetching: false,
     error: ''
 }
