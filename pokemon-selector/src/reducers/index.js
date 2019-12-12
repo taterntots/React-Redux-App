@@ -1,30 +1,32 @@
 import {
-    FETCH_POKEMON_START,
-    FETCH_POKEMON_SUCCESS,
-    FETCH_POKEMON_FAILURE
+    FETCH_JOKE_START,
+    FETCH_JOKE_SUCCESS,
+    FETCH_JOKE_FAILURE
 } from '../actions';
 
 const initialState = {
-    name: 'testName',
+    setup: 'setup',
+    punchline: 'punchline',
     isFetching: false,
     error: ''
 }
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case FETCH_POKEMON_START:
+        case FETCH_JOKE_START:
             return {
                 ...state,
                 isFetching: true
             }
-        case FETCH_POKEMON_SUCCESS:
+        case FETCH_JOKE_SUCCESS:
             return {
                 ...state,
-                name: action.payload,
+                setup: action.payload.setup,
+                punchline: action.payload.punchline,
                 isFetching: false,
                 error: ''
             }
-        case FETCH_POKEMON_FAILURE:
+        case FETCH_JOKE_FAILURE:
             return {
                 ...state,
                 isFetching: false,
