@@ -1,11 +1,12 @@
 import React from 'react';
+import Pokemon from './components/Pokemon';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Boop</h1>
+        <Pokemon />
       </header>
     </div>
   );

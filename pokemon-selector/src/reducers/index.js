@@ -1,6 +1,6 @@
 const initialState = {
-    name: bulbasaur,
-    type: grass,
+    name: 'bulbasaur',
+    type: 'grass',
     isFetching: false,
     error: ''
 }
